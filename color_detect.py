@@ -3,6 +3,10 @@ import PIL.Image as Image
 
 
 def get_dominant_color(image):
+    print('debug1')
+    print(image)
+    print('debug2')
+    print(type(image))
     max_score = 0.0001
     dominant_color = None
     for count, (r, g, b) in image.getcolors(image.size[0] * image.size[1]):
